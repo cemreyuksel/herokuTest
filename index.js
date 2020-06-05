@@ -25,6 +25,6 @@ io.on('connection', (socket) => {
 // leadership board (show the winners)
 
 
-http.listen(3000, () => {
+http.listen((process.env.PORT || 3000), () => {
   console.log('listening on *:3000');
 });
